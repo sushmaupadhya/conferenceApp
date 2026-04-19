@@ -1,0 +1,214 @@
+/* ---------------------------------------
+   FORM 1: SIGNUP (Registration – Form 1)
+------------------------------------------*/
+
+.registration-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 32px 40px;
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    box-sizing: border-box;
+}
+
+/* Title */
+.registration-wrapper h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 16px;
+}
+
+/* Intro paragraph */
+.registration-intro {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 26px;
+}
+
+/* Form wrapper */
+.registration-form {
+    margin-top: 10px;
+}
+
+/* Section title */
+.form-section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 18px;
+}
+
+/* -------------------------------
+   GRID SYSTEM (Two Columns)
+--------------------------------*/
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 28px;
+}
+
+/* Ensure grid children do NOT overflow */
+.form-grid > div {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------
+   FORM ELEMENTS
+--------------------------------*/
+.registration-form label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* INPUTS + SELECTS */
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form select {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: #f8fafc;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+
+.registration-form input:focus,
+.registration-form select:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+    outline: none;
+}
+
+/* -------------------------------
+   RADIO GROUP
+--------------------------------*/
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.radio-group label {
+    font-weight: 500;
+    color: #374151;
+    font-size: 15px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* -------------------------------
+   NOTE
+--------------------------------*/
+.registration-note {
+    margin-top: 24px;
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  border: none;
+  padding: 6px 12px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.view-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.view-link:hover {
+  text-decoration: underline;
+}
+
+
+/* -------------------------------
+   SUBMIT BUTTON
+--------------------------------*/
+.registration-form .btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: #0658b6;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.25s;
+}
+
+.registration-form .btn-primary:hover {
+    background: #004a99;
+    box-shadow: 0 6px 16px rgba(6, 88, 182, 0.3);
+}
+
+.registration-info {
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #374151;
+}
+
+/* Style only this specific login link */
+.registration-info .login-link {
+    background: #2563eb;
+    color: #ffffff !important;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-left: 8px;
+    font-weight: 600;
+    display: inline-block;
+    transition: background 0.25s ease;
+}
+
+.registration-info .login-link:hover {
+    background: #1e4fcf;
+}
+
+
+/* -------------------------------
+   RESPONSIVE FIXES
+--------------------------------*/
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .registration-wrapper {
+        padding: 24px;
+    }
+
+    .registration-wrapper h2 {
+        font-size: 24px;
+    }
+
+    .registration-intro {
+        font-size: 15px;
+    }
+}
+

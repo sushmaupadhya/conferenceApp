@@ -1,0 +1,74 @@
+/* Detail view page */
+.view-registration .detail-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+.view-registration .detail-card h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.view-registration .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px 24px;
+}
+
+.view-registration .detail-grid .label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: #6b7280;
+    margin-bottom: 2px;
+}
+
+.view-registration .detail-grid .value {
+    display: block;
+    font-size: 14px;
+    color: #111827;
+}
+
+.view-registration .view-link {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #e0edff;
+    color: #1d4ed8;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.view-registration .view-link:hover {
+    background: #d0e2ff;
+}
+
+/* Fix overlapping View/Download link */
+.value {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.view-link {
+    display: inline-block;
+    background: #e9f1ff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #0a4bd6 !important;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.view-link:hover {
+    background: #dce8ff;
+}
+

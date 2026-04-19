@@ -1,0 +1,7 @@
+error_log 
+reset_debug.txt 
+*.log 
+includes/db.php 
+includes/config.php 
+assets/uploads/ 
+__pycache__/ 

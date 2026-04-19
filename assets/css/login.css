@@ -1,0 +1,89 @@
+/* ========= LOGIN PAGE ONLY ========= */
+
+.login-container {
+    max-width: 420px;
+    margin: 5px auto 0;
+    padding: 20px 70px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 22px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.login-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.success-msg {
+    background: #e7f9ec;
+    color: #1a7e34;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+/* Form fields */
+.login-form .form-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.login-form label {
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.login-form input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Login Button */
+.btn-primary {
+    width: 100%;
+    background: #3b82f6;
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #2563eb;
+}
+
+/* Forgot link */
+.forgot-link {
+    margin-top: 15px;
+}
+
+.forgot-link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.forgot-link a:hover {
+    text-decoration: underline;
+}

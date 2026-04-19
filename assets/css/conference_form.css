@@ -1,0 +1,178 @@
+/* ================================
+   Conference registration form
+================================ */
+
+/* Outer wrapper */
+.registration-wrapper {
+    max-width: 1100px;
+    margin: 40px auto 70px;
+    padding: 0 20px;
+}
+
+/* Title */
+.registration-wrapper h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+/* Intro text */
+.registration-intro {
+    color: #4b5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Card around the form */
+.form-card.registration-form {
+    background: #ffffff;
+    padding: 28px 32px;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 16px 40px rgba(15,23,42,0.12);
+}
+
+.registration-wrapper .form-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 60px;   /* increased horizontal spacing */
+    row-gap: 28px;      /* comfortable vertical spacing */
+}
+
+/* Add spacing inside each form grid item */
+.registration-wrapper .form-grid > div {
+    padding-right: 20px;   /* space on right */
+    padding-left: 5px;     /* slight space on left */
+}
+
+/* Each field block */
+.registration-wrapper .form-grid > div {
+    min-width: 0;
+}
+
+/* Labels */
+.registration-wrapper label {
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    color: #1f2937;
+    margin-bottom: 6px;
+}
+
+.registration-wrapper .small-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b7280;
+}
+
+/* Inputs & select */
+.registration-wrapper input[type="text"],
+.registration-wrapper input[type="file"],
+.registration-wrapper select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 4px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background: #fafafa;
+    font-size: 15px;
+    outline: none;
+    transition: border 0.2s ease, background 0.2s ease;
+}
+
+.registration-wrapper input[type="text"]:focus,
+.registration-wrapper input[type="file"]:focus,
+.registration-wrapper select:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+}
+
+/* Radio group */
+.registration-wrapper .radio-group {
+    margin-top: 6px;
+}
+
+.registration-wrapper .radio-group label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #374151;
+    margin-right: 18px;
+}
+
+.registration-wrapper .radio-group input {
+    margin-right: 6px;
+}
+
+/* Submit button */
+.registration-wrapper .btn-primary {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: #2563eb;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.registration-wrapper .btn-primary:hover {
+    background: #1e40af;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(37,99,235,0.25);
+}
+
+.back-link {
+    font-size: 15px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Mobile: stack into 1 column */
+@media (max-width: 768px) {
+    .registration-wrapper .form-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .form-card.registration-form {
+        padding: 22px 20px;
+    }
+
+    .registration-wrapper h2 {
+        font-size: 24px;
+    }
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 32px;
+    margin-top: 10px;
+}
+
+.detail-grid .label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 2px;
+}
+
+.detail-grid .value {
+    display: block;
+    font-size: 15px;
+    color: #111827;
+}

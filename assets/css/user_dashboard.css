@@ -1,0 +1,104 @@
+/* Container */
+.ud-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Header row */
+.ud-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.ud-logout-btn {
+    background: #dc2626;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.ud-logout-btn:hover {
+    background: #b91c1c;
+}
+
+/* Card */
+.ud-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 25px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.ud-card-title {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ud-card-desc {
+    color: #555;
+    margin-bottom: 18px;
+}
+
+/* Buttons */
+.ud-btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.ud-btn:hover {
+    background: #1d4ed8;
+}
+
+.ud-btn-secondary {
+    display: inline-block;
+    background: #e5e7eb;
+    color: #111;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.ud-btn-secondary:hover {
+    background: #d1d5db;
+}
+
+/* Status text */
+.ud-status {
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ud-success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.ud-remarks {
+    background: #fef3c7;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .ud-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
