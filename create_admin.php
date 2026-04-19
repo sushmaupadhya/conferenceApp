@@ -3,8 +3,8 @@
 require_once __DIR__ . '/config.php';
 
 // CHANGE THESE IF YOU WANT DIFFERENT ADMIN LOGIN
-$email = 'icesr.conf@iisc.ac.in';   // admin login email
-$plainPassword = 'Icesrconf@11sc';      // admin login password
+$email = '';   // admin login email
+$plainPassword = '';      // admin login password
 
 try {
     // Hash the password using this server's PHP
